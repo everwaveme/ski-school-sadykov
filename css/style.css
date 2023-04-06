@@ -31,9 +31,16 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
+.container  {
+  width: 1278px;
+  margin: 0 auto;
+  border: 1px solid red;
+}
+
 h1 {
   font-family: 'Oswald', sans-serif;
 }
+
 
 /* Шапка сайта */
 .header {
@@ -46,9 +53,19 @@ h1 {
   font-weight: 500;
   font-size: 24px;
   line-height: 29px;
-  display: flex;
+
   align-items: center;
   text-align: center;
+
+  height: 45px;
+  left: 81px;
+  top: 34px;
+
+}
+
+.main-logo {
+  width: 295.5px;
+  height: 50.76px;
 }
 
 .contact {
@@ -65,20 +82,28 @@ h1 {
 }
 
 /* Блок Desc */
+.desc {
+  height: 766px;
+  background-image: url(../images/desc-img.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+}
+
 .desc-title {
   font-family: 'Oswald', sans-serif;
-font-style: normal;
-font-weight: 500;
-font-size: 60px;
-line-height: 89px;
-display: flex;
-align-items: center;
-text-align: center;
-text-transform: uppercase;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 60px;
+  line-height: 89px;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
 
-color: #FFFFFF;
+  color: #FFFFFF;
 
-text-shadow: 1px 1px 2px #060D10;
+  text-shadow: 1px 1px 2px #060D10;
 }
 
 .desc-text {
@@ -87,7 +112,6 @@ text-shadow: 1px 1px 2px #060D10;
   font-weight: 500;
   font-size: 32px;
   line-height: 39px;
-  display: flex;
   align-items: center;
   text-align: center;
 
