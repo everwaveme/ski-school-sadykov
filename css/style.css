@@ -27,6 +27,11 @@
        url('../fonts/oswald-v49-latin-500.woff') format('woff'); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
+/* Common - Общие */
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: 'Montserrat', sans-serif;
 }
@@ -41,10 +46,17 @@ h1 {
   font-family: 'Oswald', sans-serif;
 }
 
-
 /* Шапка сайта */
 .header {
   background: #66D1FF;
+  padding: 30px;
+}
+
+.header-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
 }
 
 .btn {
@@ -54,12 +66,13 @@ h1 {
   font-size: 24px;
   line-height: 29px;
 
-  align-items: center;
-  text-align: center;
+  display: inline-block;
+  padding: 8px 41px;
+  background: #ffffff;
+  border: 2px solid #ffffff;
+  border-radius: 4px;
 
-  height: 45px;
-  left: 81px;
-  top: 34px;
+  color: #060D10
 
 }
 
@@ -74,21 +87,19 @@ h1 {
   font-weight: 500;
   font-size: 28px;
   line-height: 34px;
-  display: flex;
-  align-items: center;
-  text-align: center;
+
 
   color: #060D10;
 }
 
 /* Блок Desc */
 .desc {
-  height: 766px;
+  padding: 240px;
   background-image: url(../images/desc-img.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  display: flex;
+
 }
 
 .desc-title {
@@ -97,11 +108,11 @@ h1 {
   font-weight: 500;
   font-size: 60px;
   line-height: 89px;
-  align-items: center;
+
   text-align: center;
   text-transform: uppercase;
 
-  color: #FFFFFF;
+  color: #ffffff;
 
   text-shadow: 1px 1px 2px #060D10;
 }
@@ -180,7 +191,14 @@ h1 {
 
 /* Блок Footer */
 .footer {
+  padding: 40px 0;
   background: #060D10;
+}
+
+.footer-wrap {
+  display: flex;
+  align-items: center;
+
 }
 
 .footer-text {
@@ -200,7 +218,6 @@ h1 {
   font-weight: 500;
   font-size: 18px;
   line-height: 22px;
-  display: flex;
   align-items: center;
   text-align: right;
 
