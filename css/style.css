@@ -33,13 +33,13 @@
 }
 
 body {
+  margin: 0;
   font-family: 'Montserrat', sans-serif;
 }
 
 .container  {
   width: 1278px;
   margin: 0 auto;
-  border: 1px solid red;
 }
 
 h1 {
@@ -192,7 +192,9 @@ h2.options-title {
 
 /* Блок Order */
 .order {
- padding: 180px 0;
+ text-align: center;
+ background: linear-gradient(208.35deg, rgba(102, 209, 255, .1) 43.85%, rgba(196, 196, 196, 0) 43.86%);
+ mix-blend-mode: normal;
 
 }
 
@@ -205,29 +207,44 @@ h2.options-title {
   text-align: center;
   text-transform: uppercase;
   display: block;
+  padding-top: 170px;
   padding-bottom: 60px;
 
   color: #060D10;
 }
 
 .order-btn {
-  font-family: 'Oswald', sans-serif;
+  display: inline-block;
+  min-width: 505px;
+  padding: 20px;
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
   font-style: normal;
   font-weight: 500;
-  font-size: 48px;
-  line-height: 167%;
+  font-size: 36px;
+  line-height: 44px;
   text-align: center;
-  text-transform: uppercase;
-  display: block;
+  border: 3px solid #060D10;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  border-radius: 4px;
+  cursor: pointer;
 
   color: #060D10;
+}
+
+.order-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 132px;
+  padding-bottom: 180px;
+
 }
 
 /* Блок Footer */
 .footer {
   padding: 40px 0;
   background: #060D10;
-  border: 1px solid red;
 }
 
 .footer-wrap {
